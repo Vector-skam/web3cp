@@ -126,7 +126,78 @@
         <a href="https://app3web.netlify.app" class="project-link" target="_blank">app3web</a>
         <a href="https://web3money.netlify.app" class="project-link" target="_blank">web3money</a>
     </div>
+   
+    <style>
+        /* Обнуляем отступы */
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f2f5; /* Светлый фон */
+            font-family: sans-serif;
+        }
 
+        /* Адаптивный контейнер */
+        .card-container {
+            max-width: 500px; /* Максимальная ширина блока */
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Самоадаптирующаяся картинка */
+        .card-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Кнопка Донат */
+        .donate-btn {
+            display: block;
+            width: calc(100% - 40px);
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #0088cc; /* Цвет Telegram */
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .donate-btn:hover {
+            background-color: #0077b3;
+        }
+
+        .donate-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <img src="https://raw.githubusercontent.com/Vector-skam/web3cp/refs/heads/main/Screenshot_2026-03-30-09-51-47-059-edit_org.telegram.messenger.jpg" 
+         alt="Preview" 
+         class="card-image">
+    
+    <button class="donate-btn" onclick="handleDonate()">ДОНАТ</button>
+</div>
+
+<script>
+    function handleDonate() {
+        // Здесь можно вставить ссылку на оплату или вызов функции Telegram
+        alert("Переход к оплате доната...");
+    }
+</script>
     <div class="contact-section">
         <h2>CONTACT INFO</h2>
         <p>Это мои официальные проекты. По вопросам сотрудничества или техподдержки писать на почту:</p>
